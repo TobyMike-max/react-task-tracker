@@ -92,11 +92,10 @@ const App = () => {
     <Router>
       <div className="container">
 	<Navbar/>
-        <Header onAdd={() => setShowAddTask(!showAddTask)}
-        showAdd={showAddTask} />
-
         <Route path='/' exact render={(props) => (
           <>
+	    <Header onAdd={() => setShowAddTask(!showAddTask)}
+	    showAdd={showAddTask} />
             {showAddTask && <AddTask onAdd={addTask} />}
             {tasks.length > 0 ? (
               <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} />
