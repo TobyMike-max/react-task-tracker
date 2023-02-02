@@ -10,20 +10,37 @@ body{
 }
 
 .container{
-  max-width: 500px;
-  margin: 30px auto;
+  max-width: 99%;
+  margin: auto auto;
   overflow: auto;
-  min-height: 300px;
+  min-height: 99%;
   border: 1px solid steelblue;
-  padding: 30px;
+  padding: 20px;
   border-radius: 5px;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.navbar input{
+  width: 35vw;
+  font-size: 16px;
+  height: 30px;
+  border-radius: 7px;
+  padding: 3px 10px;
+  border: 1px solid;
+  outline: none;
 }
 
 .header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .btn{
